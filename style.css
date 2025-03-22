@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Canela";
+    src: url('./fonts/Canela-Thin.woff2');
+}
+
+body {
+    margin: 0;
+}
+
+.hero{
+    height: 400dvh; /* Make the container tall enough to scroll */
+    position: relative;
+    overflow: clip;
+}
+
+.hero-content{
+    height: 100dvh;
+    position: relative;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-background{
+    height: 100dvh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Full viewport height */
+    object-fit: cover;
+}
+
+.hero-bg-cover{
+    background-color: #0003;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.gradient-cover-top{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .36), transparent);
+    height: 40%;
+    left: 0;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.gradient-cover-bottom{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .64), transparent);
+    bottom: 0;
+    height: 50%;
+    left: 0;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo-wrapper{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    translate: none; rotate: none; scale: none; transform: translate(-50%, -50%) translate3d(0px, 0px, 1px);
+    transition: opacity .6s cubic-bezier(0.16,1,0.3,1)
+}
+.icon{
+    display: block;
+}
+
+.icon svg {
+    display: block;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: calc(100vw - 5rem);
+}
+
+.hero-description {
+    bottom: 6rem;
+    color: #dfd8cf;
+    left: 3rem;
+    max-width: 21rem;
+    position: absolute;
+    font-family: "Canela",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: -.009rem;
+    line-height: 100%;
+}
+.hero-description p{
+    margin: 0;
+    padding: 0;
+}
+
+.hero-main-titles{
+    position: relative;
+    transform: translateY(1.5rem);
+    width: 54.0625rem;
+}
+.hero-main-title{
+    color: #fff;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-family: "Canela", sans-serif;
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: -.006em;
+    line-height: 100%;
+}
+
+
+.hero-main-title i{
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: -.006em;
+    line-height: 100%;
+}
+
+.hero-main-title span span,
+.hero-main-title i span{
+    transition: 300ms opacity, 300ms transform;
+    display: inline-block;
+    opacity: 0;
+}
+
+.scrollable-content {
+    padding: 20px;
+    background: #f0f0f0;
+}

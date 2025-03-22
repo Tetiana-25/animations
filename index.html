@@ -1,557 +1,102 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Южакова Татьяна-фрилансер,веб-разработчик</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="/css/swiper.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="hero">
-      <div class="container">
-        <div class="hero-header">
-          <img src="img\logo.svg" alt="Glo Academy" class="logo" />
-          <div class="social-links">
-            <a
-              href="https://github.com/Tetiana-25"
-              target="_blank"
-              class="social-link"
-              ><img src="img\social\github.svg" alt="github"
-            /></a>
-            <a
-              href="https://twitter.com/Tetiana-25"
-              target="_blank"
-              class="social-link"
-              ><img src="img\social\twitter.svg" alt="twitter"
-            /></a>
-            <a
-              href="https://instagram.com/tanyusha_yu_"
-              target="_blank"
-              class="social-link"
-              ><img src="img\social\instagram.svg" alt="instagram"
-            /></a>
-            <a
-              href="https://www.facebook.com/profile.php?id=100007080403326"
-              target="_blank"
-              class="social-link"
-              ><img src="img\social\facebook.svg" alt="facebook"
-            /></a>
-          </div>
-          <!-- /.social-links -->
-        </div>
-        <!-- /.hero-header -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="hero">
         <div class="hero-content">
-          <div class="hero-text">
-            <span
-              class="hero-subtitle wow animate__animated animate__fadeInRight"
-              data-wow-delay="0.2s"
-              >Фрилансер</span
-            >
-            <h1
-              class="hero-title wow animate__animated animate__fadeInRight"
-              data-wow-delay="0.2s"
-            >
-              Татьяна Южакова
-            </h1>
-            <p
-              class="hero-description wow animate__animated animate__flipInY"
-              data-wow-delay="0.4s"
-            >
-              Разрабатываю сайты для малого и среднего бизнеса. У меня можно
-              заказать дизайн и верстку небольшого сайта или интернет-магазина
-            </p>
-            <button
-              class="button hero-button wow animate__animated animate__fadeInRight"
-              data-wow-delay="0.5s"
-            >
-              Бесплатная консультация
-            </button>
-          </div>
-          <!-- /.hero-text -->
-          <div
-            class="hero-avatar wow animate__animated animate__fadeInRightBig"
-            data-wow-delay="0.3s"
-          ></div>
-          <!-- /.hero-avatar -->
+            <div class="hero-background">
+                <canvas id="imageCanvas"></canvas>            
+                <div class="hero-bg-cover"></div>
+                <div class="gradient-cover-top"></div>
+                <div class="gradient-cover-bottom"></div>
+                <div class="logo-wrapper">
+                    <span data-v-e12839be="" data-v-c2c79ab1="" class="icon inner-svg">
+                        <svg width="152" height="48" viewBox="0 0 152 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.00195 6.70117H2.03851V27.3171H8.71854V6.70117H9.75509V41.5986H8.71854V28.2385H2.03851V41.7137H1.00195V6.70117Z" fill="white"></path>
+                            <path d="M37.2812 23.5164C37.2812 29.6205 32.3288 34.4578 26.3398 34.4578C20.3508 34.4578 15.2832 29.6205 15.2832 23.5164C15.2832 17.4122 20.2356 12.575 26.2246 12.575C32.3288 12.575 37.2812 17.5274 37.2812 23.5164ZM33.2502 16.4908C29.2191 12.4598 22.7694 12.2294 18.8536 16.1453C14.9377 20.0612 15.168 26.5109 19.1991 30.5419C23.2301 34.573 29.6798 34.8033 33.5957 30.8874C37.5116 27.0867 37.3964 20.6371 33.2502 16.4908Z" fill="white"></path>
+                            <path d="M44.9979 12.575C48.6834 12.575 51.6779 15.5694 51.6779 19.255C51.6779 22.0191 49.9504 24.4378 47.5317 25.4743L53.6359 34.1123H52.5993L46.7255 25.7047C46.1496 25.8198 45.5738 25.935 44.9979 25.935C44.6524 25.935 44.3069 25.935 43.9614 25.8198V34.1123H42.9248V12.9205C43.6158 12.6901 44.3069 12.575 44.9979 12.575ZM44.9979 25.4743C48.1076 25.4743 50.6414 22.7102 50.6414 19.255C50.6414 15.7998 48.1076 13.0356 44.9979 13.0356C44.6524 13.0356 44.3069 13.0356 43.9614 13.1508V25.3591C44.3069 25.4743 44.6524 25.4743 44.9979 25.4743Z" fill="white"></path>
+                            <path d="M60.6616 34.2276V12.9207H61.6982V34.2276H60.6616Z" fill="white"></path>
+                            <path d="M75.6337 32.8454C75.7489 32.9606 75.7489 33.191 75.8641 33.3061H70.9116C72.2937 26.8565 73.7909 20.4068 75.173 14.0723H71.142C71.0268 13.9571 71.0268 13.7267 70.9116 13.6116H75.8641C74.482 20.0613 72.9847 26.5109 71.6027 32.8454H75.6337Z" fill="white"></path>
+                            <path d="M104.888 23.5164C104.888 29.6205 99.9353 34.4578 93.9463 34.4578C87.9573 34.4578 83.0049 29.5054 83.0049 23.5164C83.0049 17.4122 87.9573 12.575 93.9463 12.575C100.05 12.575 104.888 17.5274 104.888 23.5164ZM100.972 16.4908C96.9408 12.4598 90.4911 12.2294 86.5752 16.1453C82.6594 20.0612 82.8897 26.5109 86.9208 30.5419C90.9518 34.573 97.4015 34.8033 101.317 30.8874C105.233 27.0867 105.003 20.6371 100.972 16.4908Z" fill="white"></path>
+                            <path d="M121.127 12.9207V34.2276H120.782L120.666 33.8821L112.95 16.0303V34.2276H112.374V12.9207H112.72L112.835 13.2662L120.551 31.118V12.9207H121.127Z" fill="white"></path>
+                            <path d="M137.252 12.9207C137.136 13.151 136.906 13.2662 136.791 13.4965H133.336V34.2276H132.299V13.4965H128.383C128.498 13.2662 128.729 13.151 128.844 12.9207H137.252Z" fill="white"></path>
+                            <path d="M150.266 40.7924C150.496 41.0227 150.726 41.3682 150.957 41.5986H142.204V6.70117H150.957C150.726 6.93152 150.496 7.27704 150.266 7.50738H143.24V19.4854H149.46C149.229 19.7157 149.114 20.0612 148.884 20.2916H143.24V40.562H150.266V40.7924Z" fill="white"></path>
+                        </svg>
+                    </span>
+                </div> 
+            </div>
+            <div class="hero-main-titles">
+                <h1 class="hero-main-title">
+                    <span>Panoramic</span> <i>views</i><span>, spacious layouts, </span><i>gated</i> <span>community - spending time at home is simply </span><i>a </i> <span>pleasure.</span>
+                </h1>
+                <h1 class="hero-main-title">
+                    <span>Meet</span> <br>
+                    <i>the</i> <span>horizonte</span>
+                </h1>
+            </div>
+            <div class="h2 hero-description">
+                <p>Welcome to "Horizonte," a </p>
+                <p>prestigious residential project that </p>
+                <p>sets a new standard in luxury living </p>
+                <p>along the Costa del Sol.</p>
+            </div>
         </div>
-        <!-- /.hero-content -->
-      </div>
-      <!-- /.container -->
-    </header>
-
-    <main>
-      <section class="features section">
-        <div class="container">
-          <h2
-            class="section-title wow animate__animated animate__fadeInBottomRight"
-            data-wow-delay="0.2s"
-          >
-            Со мной удобно работать
-          </h2>
-          <div class="features-block">
-            <div
-              class="features-item wow animate__animated animate__rotateIn"
-              data-wow-delay="0.2s"
-            >
-              <img
-                src="img\features\offer-img.png"
-                alt="По договору"
-                class="features-images"
-              />
-              <h3 class="features-title">По договору</h3>
-              <p class="featires-text">
-                Предоставлю все документы для бухгалтерии: договоры, счета и
-                акты. Работаю как ИП без НДС.
-              </p>
-            </div>
-            <div
-              class="features-item wow animate__animated animate__rotateIn"
-              data-wow-delay="0.2s"
-            >
-              <img
-                src="img\features\deadline-img.png"
-                alt="Точно в срок"
-                class="features-images"
-              />
-              <h3 class="features-title">Точно в срок</h3>
-              <p class="featires-text">
-                В договоре прописана моя ответственность за срок проекта. Если
-                просрочу — плачу неустойку.
-              </p>
-            </div>
-            <div
-              class="features-item wow animate__animated animate__rotateIn"
-              data-wow-delay="0.2s"
-            >
-              <img
-                src="img\features\agreement-img.png"
-                alt="Ценник под вас"
-                class="features-images"
-              />
-              <h3 class="features-title">Ценник под вас</h3>
-              <p class="featires-text">
-                Если у вас нетиповой проект, сделаю рассчет цены за работу и
-                объясню, как складывается цена.
-              </p>
-            </div>
-            <div
-              class="features-item wow animate__animated animate__rotateIn"
-              data-wow-delay="0.2s"
-            >
-              <img
-                src="img\features\steps-img.png"
-                alt="Премежуточные итоги"
-                class="features-images"
-              />
-              <h3 class="features-title">Премежуточные итоги</h3>
-              <p class="featires-text">
-                Показываю работу поэтапно, а не в последий момент перед крайним
-                сроком.
-              </p>
-            </div>
-            <div
-              class="features-item wow animate__animated animate__rotateIn"
-              data-wow-delay="0.2s"
-            >
-              <img
-                src="img\features\storage-img.png"
-                alt="Хостинг и домен "
-                class="features-images"
-              />
-              <h3 class="features-title">Хостинг и домен</h3>
-              <p class="featires-text">
-                Если мы договорились о цене проекта, в неё входит всё: домен и
-                хостинг на год + SSL сертификат.
-              </p>
-            </div>
-            <div
-              class="features-item wow animate__animated animate__rotateIn"
-              data-wow-delay="0.2s"
-            >
-              <img
-                src="img\features\conversation-img.png"
-                alt="Не брошу после сдачи"
-                class="features-images"
-              />
-              <h3 class="features-title">Не брошу после сдачи</h3>
-              <p class="featires-text">
-                Научу вас или вашего сотрудника пользоваться сайтом, запишу
-                видео-инструкции.
-              </p>
-            </div>
-          </div>
-          <!-- /.features-block -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.features -->
-      <section class="section projects">
-        <div class="container">
-          <h2 class="section-title">Последние проекты</h2>
-
-          <!-- Slider main container -->
-          <div class="swiper-container projects-slider">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide projects-slide">
-                <img
-                  src="img/lend1.jpg"
-                  alt="Сайт рекламодателя"
-                  class="project-image"
-                />
-                <div class="project-text">
-                  <h3 class="project-title">
-                    Сайт рекламодателя
-                  </h3>
-                  <div class="project-time">
-                    <img
-                      src="img/time-icon.svg"
-                      alt="Срок"
-                      class="project-icon"
-                    />
-                    <div class="project-description">
-                      <h4 class="project-subtitle">Сроки</h4>
-                      <p class="project-paragraph">3 рабочих дня</p>
-                    </div>
-                  </div>
-                  <!-- /.project-time -->
-                  <div class="project-cost">
-                    <img
-                      src="img/cost-icon.svg"
-                      alt="Стоимость"
-                      class="project-icon"
-                    />
-                    <div class="project-description">
-                      <h4 class="project-subtitle">Стоимость</h4>
-                      <p class="project-paragraph">10 000 рублей</p>
-                    </div>
-                  </div>
-                  <!-- /.project-cost -->
-                  <div class="project-feedback">
-                    <img
-                      src="img/feedback-icon.svg"
-                      alt="Отзыв клиента"
-                      class="project-icon"
-                    />
-                    <div class="project-description">
-                      <h4 class="project-subtitle">Отзыв клиента</h4>
-                      <p class="project-paragraph">
-                        Мне понравилось работать с Татьяной, потому что она все
-                        время была на связи и предлагала свои решения, когда мы
-                        заходили в тупик с дизайном. Мне нужны были закрывающие
-                        документы для бухгалтерии, и Татьяна — тот редкий
-                        фрилансер, у которого с документами все в порядке
-                      </p>
-                    </div>
-                  </div>
-                  <!-- /.project-feedback -->
-                </div>
-                <!-- /.project-text -->
-              </div>
-              <div class="swiper-slide projects-slide">
-                <div class="swiper-slide projects-slide">
-                  <img
-                    src="img/lend2.jpg"
-                    alt="Top Travel"
-                    class="project-image"
-                  />
-                  <div class="project-text">
-                    <h3 class="project-title">
-                      Сайт фирмы “Top Travel”
-                    </h3>
-                    <div class="project-time">
-                      <img
-                        src="img/time-icon.svg"
-                        alt="Срок"
-                        class="project-icon"
-                      />
-                      <div class="project-description">
-                        <h4 class="project-subtitle">Сроки</h4>
-                        <p class="project-paragraph">5 рабочих дней</p>
-                      </div>
-                    </div>
-                    <!-- /.project-time -->
-                    <div class="project-cost">
-                      <img
-                        src="img/cost-icon.svg"
-                        alt="Стоимость"
-                        class="project-icon"
-                      />
-                      <div class="project-description">
-                        <h4 class="project-subtitle">Стоимость</h4>
-                        <p class="project-paragraph">20 000 рублей</p>
-                      </div>
-                    </div>
-                    <!-- /.project-cost -->
-                    <div class="project-feedback">
-                      <img
-                        src="img/feedback-icon.svg"
-                        alt="Отзыв клиента"
-                        class="project-icon"
-                      />
-                      <div class="project-description">
-                        <h4 class="project-subtitle">Отзыв клиента</h4>
-                        <p class="project-paragraph">
-                          Мне понравилось работать с Татьяной, потому что она
-                          все время была на связи и предлагала свои решения,
-                          когда мы заходили в тупик с дизайном. Мне нужны были
-                          закрывающие документы для бухгалтерии, и Татьяна — тот
-                          редкий фрилансер, у которого с документами все в
-                          порядке
-                        </p>
-                      </div>
-                    </div>
-                    <!-- /.project-feedback -->
-                  </div>
-                  <!-- /.project-text -->
-                </div>
-              </div>
-              <div class="swiper-slide projects-slide">
-                <div class="swiper-slide projects-slide">
-                  <img
-                    src="img/lend3.jpg"
-                    alt="Сайт фирмы пластиковых окон"
-                    class="project-image"
-                  />
-                  <div class="project-text">
-                    <h3 class="project-title">
-                      Сайт фирмы пластиковых окон
-                    </h3>
-                    <div class="project-time">
-                      <img
-                        src="img/time-icon.svg"
-                        alt="Срок"
-                        class="project-icon"
-                      />
-                      <div class="project-description">
-                        <h4 class="project-subtitle">Сроки</h4>
-                        <p class="project-paragraph">7 рабочих дней</p>
-                      </div>
-                    </div>
-                    <!-- /.project-time -->
-                    <div class="project-cost">
-                      <img
-                        src="img/cost-icon.svg"
-                        alt="Стоимость"
-                        class="project-icon"
-                      />
-                      <div class="project-description">
-                        <h4 class="project-subtitle">Стоимость</h4>
-                        <p class="project-paragraph">25 000 рублей</p>
-                      </div>
-                    </div>
-                    <!-- /.project-cost -->
-                    <div class="project-feedback">
-                      <img
-                        src="img/feedback-icon.svg"
-                        alt="Отзыв клиента"
-                        class="project-icon"
-                      />
-                      <div class="project-description">
-                        <h4 class="project-subtitle">Отзыв клиента</h4>
-                        <p class="project-paragraph">
-                          Мне понравилось работать с Татьяной, потому что она
-                          все время была на связи и предлагала свои решения,
-                          когда мы заходили в тупик с дизайном. Мне нужны были
-                          закрывающие документы для бухгалтерии, и Татьяна — тот
-                          редкий фрилансер, у которого с документами все в
-                          порядке
-                        </p>
-                      </div>
-                    </div>
-                    <!-- /.project-feedback -->
-                  </div>
-                  <!-- /.project-text -->
-                </div>
-              </div>
-              <div class="swiper-slide projects-slide">
-                <div class="swiper-slide projects-slide">
-                  <img
-                    src="img/lend4.jpg"
-                    alt="Сайт фирмы “Grand Line”"
-                    class="project-image"
-                  />
-                  <div class="project-text">
-                    <h3 class="project-title">
-                      Сайт фирмы “Grand Line"
-                    </h3>
-                    <div class="project-time">
-                      <img
-                        src="img/time-icon.svg"
-                        alt="Срок"
-                        class="project-icon"
-                      />
-                      <div class="project-description">
-                        <h4 class="project-subtitle">Сроки</h4>
-                        <p class="project-paragraph">6 рабочих дней</p>
-                      </div>
-                    </div>
-                    <!-- /.project-time -->
-                    <div class="project-cost">
-                      <img
-                        src="img/cost-icon.svg"
-                        alt="Стоимость"
-                        class="project-icon"
-                      />
-                      <div class="project-description">
-                        <h4 class="project-subtitle">Стоимость</h4>
-                        <p class="project-paragraph">18 000 рублей</p>
-                      </div>
-                    </div>
-                    <!-- /.project-cost -->
-                    <div class="project-feedback">
-                      <img
-                        src="img/feedback-icon.svg"
-                        alt="Отзыв клиента"
-                        class="project-icon"
-                      />
-                      <div class="project-description">
-                        <h4 class="project-subtitle">Отзыв клиента</h4>
-                        <p class="project-paragraph">
-                          Мне понравилось работать с Татьяной, потому что она
-                          все время была на связи и предлагала свои решения,
-                          когда мы заходили в тупик с дизайном. Мне нужны были
-                          закрывающие документы для бухгалтерии, и Татьяна — тот
-                          редкий фрилансер, у которого с документами все в
-                          порядке
-                        </p>
-                      </div>
-                    </div>
-                    <!-- /.project-feedback -->
-                  </div>
-                  <!-- /.project-text -->
-                </div>
-              </div>
-            </div>
-
-            <!-- If we need pagination -->
-            <div class="projects-pagination"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
-        </div>
-        <!-- /.container -->
-      </section>
-    </main>
-
-    <footer class="section">
-      <div class="container">
-        <h2
-          class="section-title wow animate__animated animate__backInUp"
-          data-wow-delay="0.1s"
-        >
-          Свяжитесь со мной
-        </h2>
-        <div class="contacts-block">
-          <form
-            action="#"
-            class="contacts-form wow animate__animated animate__bounceInUp"
-            data-wow-delay="0.1s"
-          >
-            <h4 class="form-title">
-              Можете просто оставить заявку, я позвоню вам сегодня
-            </h4>
-            <input
-              type="text"
-              class="input input-name"
-              placeholder="Ваше имя"
-            />
-            <input
-              type="text"
-              class="input input-phone"
-              placeholder="Ваш телефон"
-            />
-            <button class="button form-button">Бесплатная консультация</button>
-          </form>
-          <div
-            class="contacts-text wow animate__animated animate__bounceInUp"
-            data-wow-delay="0.1s"
-          >
-            <div class="contacts-data">
-              <div class="contacts-phone">
-                <h4 class="contacts-title">Телефон</h4>
-                <a href="tel:+380995865544" class="contacts-link"
-                  >+38 099 586 55 44</a
-                >
-              </div>
-              <!-- /.contacts-phone -->
-              <div class="contacts-mail">
-                <h4 class="contacts-title">Почта</h4>
-                <a href="mailto:mail@gmail.com" class="contacts-link"
-                  >mail@gmail.com</a
-                >
-              </div>
-              <!-- /.contacts-mail -->
-              <div class="contacts-social">
-                <div class="contacts-title">Соцсети</div>
-                <a
-                  href="https://t.me/tanyusha_yu"
-                  class="contacts-link"
-                  target="_blank"
-                >
-                  t.me/tanyusha
-                </a>
-                <a
-                  href="https://vk.com/tanysha_yu"
-                  class="contacts-link"
-                  target="_blank"
-                >
-                  vk.com/tanysha
-                </a>
-                <a
-                  href="https://www.facebook.com/profile.php?id=100007080403326"
-                  class="contacts-link"
-                  target="_blank"
-                >
-                  fb.me/tanyusha
-                </a>
-              </div>
-              <!-- /.contacts-social -->
-            </div>
-            <div class="social-links">
-              <a
-                href="https://github.com/Tetiana-25"
-                target="_blank"
-                class="social-link"
-                ><img src="img\social\github.svg" alt="github"
-              /></a>
-              <a
-                href="https://twitter.com/Tetiana-25"
-                target="_blank"
-                class="social-link"
-                ><img src="img\social\twitter.svg" alt="twitter"
-              /></a>
-              <a
-                href="https://instagram.com/tanyusha_yu_"
-                target="_blank"
-                class="social-link"
-                ><img src="img\social\instagram.svg" alt="instagram"
-              /></a>
-              <a
-                href="https://www.facebook.com/profile.php?id=100007080403326"
-                target="_blank"
-                class="social-link"
-                ><img src="img\social\facebook.svg" alt="facebook"
-              /></a>
-            </div>
-            <!-- /.social-links -->
-            <a href="#" class="contacts-policy">Политика конфиденциальности</a>
-          </div>
-          <!-- /.contacts-text -->
-        </div>
-        <!-- /.contacts-block -->
-      </div>
-    </footer>
-    <script src="js/wow.min.js"></script>
-    <script src="/js/swiper.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+    </section>
+    <section class="info scrollable-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, excepturi rerum? Nemo deserunt quis facere exercitationem ab, dignissimos molestias tempora eveniet dolorem, distinctio, totam nostrum? Cum eum accusantium atque magni.
+        Natus eaque dignissimos omnis explicabo. Ex, perspiciatis reiciendis saepe facilis sit placeat quas adipisci veritatis eveniet nam doloremque aperiam maxime possimus magnam dolorum impedit aliquid incidunt eius quibusdam voluptatibus nemo?
+        Porro nisi vero, nostrum dicta maiores dolorum, reprehenderit, aspernatur excepturi distinctio eveniet officia eum! Quisquam sunt laborum, illo animi voluptatum dicta sequi obcaecati quae assumenda provident ipsa numquam itaque adipisci?
+        Corrupti voluptatibus quo animi omnis odio aspernatur at officia beatae impedit velit! Fugit nisi nihil provident doloribus, voluptatibus illo culpa sint quasi doloremque dolor, laudantium, nemo numquam animi. Rem, nisi.
+        Accusantium magnam aliquid consequatur. Hic dolore architecto optio nisi ducimus voluptatibus exercitationem eum et illum est soluta nesciunt autem aliquid laboriosam nemo velit aperiam perspiciatis qui, commodi quam. Quos, fugiat.
+        Similique laudantium minima, architecto fugit ex voluptates a adipisci. A harum eum illo modi recusandae necessitatibus laboriosam quae veniam aut magnam eligendi voluptates, accusamus facilis corporis architecto non amet blanditiis?
+        Est voluptates veniam, nam modi maxime quod excepturi iste eligendi nihil nesciunt eum facere nemo eaque autem non pariatur facilis illum consequuntur magnam fugit asperiores. Earum, repellendus suscipit! Itaque, porro!
+        Sed quasi quia sint! Dolor modi tempora commodi, animi nobis eveniet voluptatem dolorum! Voluptatibus autem eaque velit, non deleniti ipsam dolor assumenda maiores tempora voluptatum? Magni fugiat at sit accusamus.
+        Ipsum nihil aliquid molestias dignissimos consectetur ullam veniam doloremque facere, iusto quisquam culpa, officia delectus quasi unde labore maxime pariatur reiciendis quo. Magni, quas omnis quam minima a ut numquam.
+        Laborum doloribus neque eaque minima ullam incidunt enim? Magnam molestias, corrupti voluptatem voluptas dolores temporibus nostrum, officiis quisquam, consequuntur eum pariatur necessitatibus perspiciatis cupiditate suscipit id soluta sint alias a!
+        Ad neque repellat voluptatem assumenda voluptatum velit nulla laboriosam repudiandae aperiam. Alias officia unde sapiente, quidem, quos quo, reprehenderit omnis eius natus magnam quia voluptate totam repellat obcaecati qui animi!
+        Provident, iusto reiciendis voluptatibus maxime aliquam cum quaerat totam, quasi sed dolores quia dicta repudiandae ullam, rerum sint et ea atque quibusdam. Maiores architecto beatae asperiores, ipsum consequatur ex libero.
+        Dicta voluptas a consectetur, architecto maiores nemo blanditiis molestias ipsa quo, necessitatibus aliquam. Odit, facere! Quam sunt neque perspiciatis aperiam omnis officia fugiat. Distinctio sequi, exercitationem quos culpa debitis laudantium.
+        Doloremque odio debitis porro nam nihil eum expedita ex alias corrupti illum a doloribus praesentium deserunt tenetur dolore earum, eos maiores sed repellat reprehenderit deleniti, ut sunt ipsum. Iusto, vero.
+        Aliquid, ullam aperiam similique dolorum deserunt, ducimus amet mollitia doloremque perspiciatis maiores tempora hic id quia pariatur soluta nam quaerat deleniti nobis. Quam sunt, molestiae eum doloremque praesentium ducimus facilis?
+        Quibusdam sed assumenda porro facere, excepturi maxime, beatae, dolor soluta quo iure illo reiciendis eum quia alias earum aspernatur voluptates et cumque! Iure eos vel sunt consectetur, nemo iste minus.
+        Iure a tempore commodi doloribus nam eveniet cum suscipit? Corrupti est saepe deleniti excepturi, debitis molestiae inventore quidem dolorem, ipsum quod modi nisi et totam architecto dignissimos consequuntur voluptas porro.
+        Similique mollitia quae, asperiores fugit minima vitae beatae autem vel eveniet labore deserunt provident aliquid fuga impedit facere aspernatur? Repellat suscipit ipsa similique ullam perferendis rerum necessitatibus ipsum id voluptatum?
+        Quaerat, nobis! Ad ipsum commodi quos esse distinctio, culpa iste. Sed incidunt odit saepe deserunt totam, qui officiis suscipit pariatur quasi? Modi nulla, ratione deserunt consequuntur cum in adipisci sapiente?
+        Consequatur placeat exercitationem molestiae! Eius numquam aperiam, praesentium animi explicabo corporis dolor voluptatibus hic commodi nostrum, vero sapiente illo veritatis totam dolore sed autem cum molestias? Molestias, fugiat ipsum? Ducimus.
+        Illo ratione eos unde obcaecati consectetur eum assumenda, ab eveniet officia. Error ipsum nihil omnis facilis sed nostrum nemo consequuntur incidunt obcaecati, optio quos adipisci in porro esse sunt quod!
+        Nulla, nemo cupiditate sequi cumque laudantium porro, magnam totam tempora dolorum laboriosam veritatis velit dolorem voluptatum maiores! Aspernatur minima at, tempore magnam, nam facilis natus perspiciatis illo, iste praesentium culpa?
+        Ut quod quos quaerat, quas mollitia quae adipisci consequuntur, maiores voluptatibus inventore tempore veritatis cumque porro iusto et deserunt a rerum voluptas eos repellat? Adipisci debitis quidem est dolorum impedit.
+        Minus et recusandae rem, totam reiciendis dolor? Tempore deleniti doloribus atque, labore totam nulla voluptate? Tenetur ipsam ut, quibusdam beatae quod earum fugit eveniet sit. Dolor, magni. Odit, eveniet consectetur?
+        Voluptates consectetur aperiam in ut. Blanditiis accusantium ab placeat consequuntur, quos, quia, nisi et totam explicabo itaque tempora! Eum, dolorum inventore nemo magni laudantium ea animi ipsa minus eius quaerat!
+        Ipsa odio consectetur dolor aperiam minus velit est quis in omnis et nobis nostrum officiis suscipit ipsum tempora minima, cum beatae officia rerum? Quibusdam dicta voluptatum blanditiis ipsam. Atque, quisquam!
+        veritatis velit dolorem voluptatum maiores! Aspernatur minima at, tempore magnam, nam facilis natus perspiciatis illo, iste praesentium culpa?
+        Ut quod quos quaerat, quas mollitia quae adipisci consequuntur, maiores voluptatibus inventore tempore veritatis cumque porro iusto et deserunt a rerum voluptas eos repellat? Adipisci debitis quidem est dolorum impedit.
+        Minus et recusandae rem, totam reiciendis dolor? Tempore deleniti doloribus atque, labore totam nulla voluptate? Tenetur ipsam ut, quibusdam beatae quod earum fugit eveniet sit. Dolor, magni. Odit, eveniet consectetur?
+        Voluptates consectetur aperiam in ut. Blanditiis accusantium ab placeat consequuntur, quos, quia, nisi et totam explicabo itaque tempora! Eum, dolorum inventore nemo magni laudantium ea animi ipsa minus eius quaerat!
+        Ipsa odio consectetur dolor aperiam minus velit est quis in omnis et nobis nostrum officiis suscipit ipsum tempora minima, cum beatae officia rerum? Quibusdam dicta voluptatum blanditiis ipsam. Atque, quisquam!veritatis velit dolorem voluptatum maiores! Aspernatur minima at, tempore magnam, nam facilis natus perspiciatis illo, iste praesentium culpa?
+        quisquam!
+        veritatis velit dolorem voluptatum maiores! Aspernatur minima at, tempore magnam, nam facilis natus perspiciatis illo, iste praesentium culpa?
+        Ut quod quos quaerat, quas mollitia quae adipisci consequuntur, maiores voluptatibus inventore tempore veritatis cumque porro iusto et deserunt a rerum voluptas eos repellat? Adipisci debitis quidem est dolorum impedit.
+        Minus et recusandae rem, totam reiciendis dolor? Tempore deleniti doloribus atque, labore totam nulla voluptate? Tenetur ipsam ut, quibusdam beatae quod earum fugit eveniet sit. Dolor, magni. Odit, eveniet consectetur?
+        Voluptates consectetur aperiam in ut. Blanditiis accusantium ab placeat consequuntur, quos, quia, nisi et totam explicabo itaque tempora! Eum, dolorum inventore nemo magni laudantium ea animi ipsa minus eius quaerat!
+        Ipsa odio consectetur dolor aperiam minus velit est quis in omnis et nobis nostrum officiis suscipit ipsum tempora minima, cum beatae officia rerum? Quibusdam dicta voluptatum blanditiis ipsam. Atque, quisquam!veritatis velit dolorem voluptatum maiores! Aspernatur minima at, tempore magnam, nam facilis natus perspiciatis illo, iste praesentium culpa?
+        quisquam!
+        veritatis velit dolorem voluptatum maiores! Aspernatur minima at, tempore magnam, nam facilis natus perspiciatis illo, iste praesentium culpa?
+        Ut quod quos quaerat, quas mollitia quae adipisci consequuntur, maiores voluptatibus inventore tempore veritatis cumque porro iusto et deserunt a rerum voluptas eos repellat? Adipisci debitis quidem est dolorum impedit.
+        Minus et recusandae rem, totam reiciendis dolor? Tempore deleniti doloribus atque, labore totam nulla voluptate? Tenetur ipsam ut, quibusdam beatae quod earum fugit eveniet sit. Dolor, magni. Odit, eveniet consectetur?
+        Voluptates consectetur aperiam in ut. Blanditiis accusantium ab placeat consequuntur, quos, quia, nisi et totam explicabo itaque tempora! Eum, dolorum inventore nemo magni laudantium ea animi ipsa minus eius quaerat!
+        Ipsa odio consectetur dolor aperiam minus velit est quis in omnis et nobis nostrum officiis suscipit ipsum tempora minima, cum beatae officia rerum? Quibusdam dicta voluptatum blanditiis ipsam. Atque, quisquam!veritatis velit dolorem voluptatum maiores! Aspernatur minima at, tempore magnam, nam facilis natus perspiciatis illo, iste praesentium culpa?
+        
+      </p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="3danim.js"></script>
+</body>
 </html>
